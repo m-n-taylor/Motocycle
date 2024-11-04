@@ -1,0 +1,57 @@
+.widget_price_filter{
+  form{
+    .price_slider{
+      height: 3px!important;
+      background: #e7e7ee!important;
+      margin-bottom: 25px!important;
+
+      .ui-slider-handle{
+        height: 15px!important;
+        width: 15px!important;
+        background: #fff!important;
+        border: 3px solid !important;
+        top: 50%!important;
+        margin-left: -7.5px!important;
+        transform: translateY(-50%);
+      }
+    }
+    .price_slider_amount{
+      display: flex;
+      line-height: 1!important;
+      flex-wrap: wrap;
+      .price_label{
+        text-align: left;
+        order: 1;
+        flex-grow: 1;
+        width: 100%;
+      }
+      button{
+        transition: .3s ease-in-out;
+        padding: 7px 25px;
+        line-height: 1;
+        font-weight: 500;
+        font-size: 11px!important;
+        text-transform: uppercase;
+        color: #fff;
+        border-radius: 0;
+        margin-top: 20px;
+        order: 2;
+        border: 1px solid transparent;
+        &:hover{
+          background: transparent!important;
+          color: #1c1f23;
+        }
+      }
+    }
+  }
+}
+
+
+.fl-woocommerce-filter-sidebar{
+  .widget_price_filter{
+    .price_slider{
+      margin-top: 28px;
+    }
+  }
+}
+

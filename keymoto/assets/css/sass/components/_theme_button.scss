@@ -1,0 +1,129 @@
+.fl-default-button{
+  padding: 20px 35px;
+  color: #fff!important;
+  display: inline-flex;
+  line-height: 1;
+  font-size: 15px;
+  transition: .3s ease;
+  position: relative;
+  letter-spacing: -0.25px;
+  .button-decor{
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: .3s ease;
+    &:after{
+      content: '';
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 4.5px 0 4.5px 6px;
+      border-color: transparent transparent transparent #fff;
+      transition: .6s ease;
+    }
+  }
+  // small button
+  &.small-size{
+    padding: 16px 30px;
+    font-size: 14px;
+    .button-decor{
+      width: 17px;
+      height: 17px;
+      &:after{
+        border-width: 3.5px 0 3.5px 5px;
+      }
+    }
+  }
+  // large button
+  &.large-size{
+    padding: 22px 42px;
+    font-size: 17px;
+    .button-decor{
+      width: 23px;
+      height: 23px;
+      &:after{
+        border-width: 5.5px 0 5.5px 7px;
+      }
+    }
+  }
+  &:hover{
+    transition: .3s ease;
+    .button-decor{
+      transition: .3s ease;
+      &:after{
+        transform: rotate(180deg);
+        transition: .6s ease;
+      }
+    }
+  }
+}
+
+
+.fl-button{
+  padding: 14px 25px;
+  display: inline-flex;
+  color: #fff;
+  font-size: 13px;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  cursor: pointer;
+  &.size-small{
+    padding: 11px 20px;
+    font-size: 12px;
+  }
+  &.size-large{
+    padding: 17px 35px;
+    font-size: 15px;
+  }
+  &:before,&:after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  &:after{
+    width: 140%;
+    left: -20%;
+    z-index: -1;
+    transform-origin: 0 50%;
+    transform: skew(-35deg) scaleX(0);
+    transition: transform .5s ease;
+  }
+  &:before{
+    z-index: -2;
+  }
+  &:hover{
+    color: #fff!important;
+    &:after{
+      transform: skew(-35deg) scaleX(1);
+    }
+  }
+}
+
+
+
+
+///
+.preview-btn{
+  display: flex;
+  align-items: center;
+  .fl-button{
+    margin-right: 25px;
+  }
+}
+
+
+
+
+
+

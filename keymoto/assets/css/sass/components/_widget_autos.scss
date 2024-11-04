@@ -1,0 +1,281 @@
+/*-------------------------------------------------------------------
+
+==  Sidebar
+
+-------------------------------------------------------------------*/
+.sidebar-title{
+	display: flex;
+	align-items: center;
+	padding: size_px2rem(25px) size_px2rem(30px);
+	border-bottom: size_px2rem(3px) solid #222222;
+	.title-wrap-content{
+		flex-grow: 1;
+		color: #fff;
+		.sidebar-title-content{
+			font-size: size_px2rem(21px);
+			text-transform: uppercase;
+		}
+		.sidebar-subtitle-content{
+			text-transform: uppercase;
+			font-size: size_px2rem(12px);
+			letter-spacing: size_px2rem(2px);
+		}
+	}
+	.logo-sidebar-content{
+		flex-grow: 0;
+	}
+}
+.sidebar{
+	&.with-title{
+		padding-top: 0!important;
+	}
+	&.cars-sidebar{
+
+		.widget{
+			// Filter
+			&.filtering-wrap{
+				.widget-content{
+					+.widget-content{
+						margin-top: size_px2rem(10px);
+					}
+					.select{
+						width: 100%;
+						.jelect-current{
+							transition: .3s ease;
+							position: relative;
+							border-radius: size_px2rem(3px);
+							&:after{
+								color: rgba(0, 0, 0, .3);
+								content: '';
+								display: inline-block;
+								width: 0;
+								height: 0;
+								vertical-align: middle;
+								border-top:size_px2rem(4px) dashed;
+								border-top: size_px2rem(4px) solid;
+								border-right: size_px2rem(4px) solid transparent;
+								border-left: size_px2rem(4px) solid transparent;
+								position: absolute;
+								top: 50%;
+								right: size_px2rem(10px);
+								transform: translateY(-50%);
+								z-index: 1;
+								transition: .3s ease;
+							}
+						}
+						ul{
+							li{
+								margin-top: 0;
+								font-size: size_px2rem(13px);
+							}
+						}
+						&:hover,&.jelect_state_active{
+							.jelect-current{
+								box-shadow: 0 0.5rem 1.375rem 0 rgba(0, 0, 0, 0.1) !important;
+								transition: .3s ease;
+								background: #fff !important;
+								border-color: transparent !important;
+							}
+						}
+						&.jelect_state_active{
+							.jelect-current{
+								&:after{
+									transition: .3s ease;
+									transform: translateY(-50%) rotate(180deg);
+								}
+							}
+						}
+					}
+				}
+
+			}
+			// Range Filtering
+			&.pixad-filter{
+				// Slider Range
+				.noUi-target {
+					height: 4px;
+					position: relative;
+					width: calc(100% - 12px);
+					background: #eeeeee;
+				}
+
+				.noUi-base {
+					width: 100%;
+					height: 100%;
+					position: relative;
+				}
+
+				.noUi-origin {
+					position: absolute;
+					right: 0;
+					top: 0;
+					left: 0;
+					height: 100%;
+					background: #e63619;
+				}
+
+				.noUi-origin+.noUi-origin {
+					border: 0;
+					background: #eeeeee;
+				}
+
+				.noUi-horizontal .noUi-handle {
+					height: 18px;
+					left: -7px;
+					top: -6px;
+					width: 18px;
+					cursor: pointer;
+				}
+
+				.noUi-horizontal .noUi-handle {
+					height: 18px;
+					left: -7px;
+					top: -6px;
+					width: 18px;
+					cursor: pointer;
+				}
+				.noUi-horizontal .noUi-handle:before {
+					height: 19px;
+					width: 19px;
+					position: absolute;
+					left: -5px;
+					content: '';
+					display: block;
+					top: -7px;
+					background-image: url("./images/slider-shape.svg");
+					background-size: contain;
+					background-repeat: no-repeat;
+					z-index: 2;
+				}
+				// Slider Range End
+				.slider-price__wrap-input{
+					display: flex;
+					align-items: center;
+					margin-top: 25px;
+					input{
+						height: 25px;
+						margin-bottom: 0;
+						text-align: center;
+					}
+					span{
+						margin: 0 5px;
+					}
+				}
+
+			}
+		}
+		.btn-wrapper{
+			width: 100%;
+			padding: 0;
+			button{
+				width: 100%;
+				color: #fff;
+				justify-content: center;
+				text-transform: uppercase;
+			}
+		}
+	}
+	.widget-content{
+		.list-categories{
+			display: flex;
+			flex-wrap: wrap;
+			margin: -5px;
+			li{
+				width: 48%;
+				padding: 5px;
+				label{
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					flex-wrap: wrap;
+					text-align: center;
+
+					.auto_body_name{
+						display: block;
+						width: 100%;
+						color: #222;
+						font-size: 12px;
+						text-transform: uppercase;
+						line-height: 1.3;
+						font-weight: 600;
+						margin-top: 4px;
+					}
+				}
+				input[type=checkbox]{
+					display: none;
+				}
+				input[type=checkbox]:checked+label{
+					.auto_body_name{
+						color: #e63619;
+					}
+				}
+			}
+		}
+	}
+
+}
+
+
+	/*
+	// Dealer Widget
+	.widget_dealer{
+		.widget-content{
+			ul{
+				display: flex;
+				flex-wrap: wrap;
+				margin: -5px -10px 0;
+				li{
+					position: relative;
+					padding: 5px 10px;
+					display: inline-flex;
+					max-width: 50%;
+					flex-wrap: wrap;
+					.wd-name{
+						line-height: 1.3;
+						font-size: 13px;
+						font-weight: 600;
+						color: #222;
+						margin-top: 4px;
+					}
+					.wd-update{
+						position: absolute;
+						right: 10px;
+						top: 10px;
+						line-height: 1;
+						font-size: 11px;
+						text-transform: uppercase;
+						padding: 4px 8px;
+						color: #fff;
+						transition: .3s ease;
+						&:hover{
+							opacity: .7;
+							transition: .3s ease;
+						}
+					}
+				}
+			}
+		}
+	}*/
+
+// Single page Widget
+.sidebar-auto{
+	.auto-price-info{
+		.car-price{
+			text-align: right;
+			.price-detail{
+				font-size: size_px2rem(50px);
+			}
+			.bottom-price-text{
+				margin-top: size_px2rem(15px);
+				text-align: right;
+			}
+		}
+	}
+}
+
+
+// Widget Dealer Info
+@import "widget_auto/_widget_dealer_info";
+// Widget Contact Form
+@import "widget_auto/_widget_contact_form";
+

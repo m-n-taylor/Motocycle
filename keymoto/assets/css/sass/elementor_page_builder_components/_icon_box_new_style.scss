@@ -1,0 +1,22 @@
+.page-builder-icon-box-new-style-wrap{
+  .entry-content{
+    display: flex;
+    margin: 0 -15px;
+    >div{
+      padding: 0 size_px2rem(15px);
+    }
+    .icon-box-new-title-wrap{
+      flex: 0 0 29%;
+      max-width: 29%;
+      width: 100%;
+      .icon-box-title{
+        color: #fff;
+        font-size: size_px2rem(20px);
+        line-height: 1.4;
+      }
+    }
+    .icon-box-content{
+      color: #fff;
+    }
+  }
+}

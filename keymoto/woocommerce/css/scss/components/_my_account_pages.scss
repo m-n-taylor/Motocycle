@@ -1,0 +1,299 @@
+.woocommerce{
+  form.login{
+    border-radius: 0;
+    p{
+      label{
+        font-size: 13px;
+        color: #1c1f23;
+        margin-bottom: 6px;
+      }
+    }
+
+    .form-row{
+      align-items: center;
+      display: flex;
+      margin-top: 15px;
+      button.button{
+        color: #fff;
+        font-weight: 500;
+        font-size: 12px;
+        padding: 15px 35px;
+        border-radius: 0;
+        margin-right: 10px;
+        transition: .3s ease;
+        &:hover{
+          opacity: .8;
+          transition: .3s ease;
+        }
+      }
+      label.woocommerce-form__label-for-checkbox{
+        order: 1;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-left: 20px;
+        font-size: 12px;
+        position: relative;
+        input[type=checkbox] {
+          border: 0;
+          padding: 0;
+          width: 0;
+          position: relative;
+          -webkit-appearance: none !important;
+          -moz-appearance: none !important;
+          -ms-appearance: none !important;
+          -o-appearance: none !important;
+          appearance: none !important;
+          &:before{
+            cursor: pointer;
+            top: -8px;
+            position: absolute;
+            left: -17px;
+            content: '';
+            display: block;
+            width: 15px;
+            height: 15px;
+            border: 1px solid #eaeaeb;
+          }
+          &:checked{
+            &:after{
+              position: absolute;
+              top: -5px;
+              left: -14px;
+              font: 9px/1 FontAwesome;
+              content: '\f00c';
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+    .lost_password{
+      padding: 3px;
+      margin-top: 0;
+      align-items: center;
+      display: inline-flex;
+      a{
+        font-size: 12px;
+        font-weight: 500;
+        position: relative;
+        transition: all .3s;
+        color: #1c1f23;
+        &:before{
+          content: '';
+          position: absolute;
+          width: 80%;
+          height: 1px;
+          bottom: 0;
+          transform-origin: 0 50%;
+          transform: scale3d(0,1,1);
+          opacity: 0;
+          transition: all .3s;
+          transition-property: opacity,transform;
+        }
+        &:hover{
+          opacity: 1;
+          transition: all .3s;
+          &:before{
+            opacity: .8;
+            transform: scale3d(1,1,1);
+            transform-origin: left;
+          }
+        }
+      }
+    }
+  }
+
+  form.lost_reset_password{
+    p{
+      label{
+        font-size: 13px;
+        color: #1c1f23;
+        margin-bottom: 6px;
+      }
+    }
+    button.button{
+      color: #fff;
+      font-weight: 500;
+      font-size: 12px;
+      padding: 15px 35px;
+      border-radius: 0;
+      margin-right: 10px;
+      transition: .3s ease;
+      &:hover{
+        transition: .3s ease;
+        opacity: .8;
+      }
+    }
+
+  }
+}
+
+
+
+.woocommerce-MyAccount-navigation{
+  ul{
+    margin: 0!important;
+    padding: 20px;
+    border: 1px solid #dddddd;
+    li{
+      &:before{
+        display: none;
+      }
+      margin: 0;
+      padding-left: 0!important;
+      padding-top: 5px!important;
+      list-style: none!important;
+      &:first-child{
+        padding-top: 0!important;
+      }
+      a{
+        padding-left: 15px;
+        color: #222;
+        transition: .3s ease;
+        &:hover{
+          transition: .3s ease;
+        }
+      }
+      &:last-child{
+
+      }
+    }
+  }
+}
+.woocommerce-MyAccount-content{
+  strong{
+    font-weight: 500!important;
+    color: #1c1f23!important;
+  }
+  a{
+    color: #1c1f23!important;
+    text-decoration: underline!important;
+    transition: .3s ease;
+    &:hover{
+      transition: .3s ease;
+    }
+  }
+  .woocommerce-message,.woocommerce-Message{
+    display: flex;
+    align-items: center;
+    a{
+      margin-top: 0!important;
+      order: 1;
+      background: transparent;
+      margin-left: 11px;
+      padding: 0;
+    }
+  }
+  .woocommerce-Addresses{
+    .col-1,.col-2{
+      max-width: 100%;
+      address{
+        width: 100%
+      }
+      .woocommerce-Address-title{
+        padding-top: 20px;
+        h3{
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  label{
+    color: #1c1f23;
+    margin-bottom: 5px;
+    font-size: 13px;
+  }
+  legend{
+    font-size: 20px;
+    color: #1c1f23;
+    font-weight: 600;
+    margin-bottom: 17px;
+  }
+  .woocommerce-Button{
+    padding: 17px 30px!important;
+    font-size: 11px!important;
+    border-radius: 0!important;
+    color: #fff!important;
+    font-weight: 500!important;
+    margin-top: 15px!important;
+  }
+  fieldset{
+    margin-top: 20px;
+  }
+  span{
+    em{
+      margin-top: 10px;
+      display: block;
+      font-size: 13px;
+    }
+  }
+  button{
+    &:hover{
+      transition: .3s ease;
+    }
+  }
+}
+
+.woocommerce-address-fields{
+  label{
+    width: 100%;
+    display: block;
+  }
+  span{
+    width: 100%;
+  }
+  input{
+    width: 100%;
+  }
+  .select2-container .select2-selection--single{
+    height: 42px;
+  }
+  .select2-container--default .select2-selection--single .select2-selection__arrow{
+    height: 42px;
+  }
+  button{
+    color: #fff!important;
+    font-weight: 500!important;
+    margin-top: 20px!important;
+    font-size: 12px!important;
+    text-transform: uppercase!important;
+    padding: 9px 35px!important;
+    border-radius: 0!important;
+    &:hover{
+      transition: .3s ease;
+    }
+  }
+}
+
+
+.woocommerce-order-details{
+  tbody{
+    tr{
+      td{
+        ul{
+          li{
+            padding-left: 0;
+            display: flex;
+            &:before{
+              display: none;
+            }
+            strong{
+              color: #222222;
+              flex-grow: 0;
+              min-width: 25%;
+              text-align: left;
+            }
+            p{
+              flex-grow: 1;
+              text-align: left;
+            }
+          }
+        }
+      }
+    }
+  }
+}

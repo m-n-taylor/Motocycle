@@ -1,0 +1,112 @@
+// Share Icon
+.post-share-icon{
+  a{
+    &.vk{
+      &:after{
+        background: #4a76a8;
+      }
+    }
+    &.pin{
+      &:after{
+        background: #e60023;
+      }
+    }
+    &.red{
+      &:after {
+        background: #ff4502;
+      }
+    }
+    &.lin{
+      &:after {
+        background: #1785b0;
+      }
+    }
+    &.goglp{
+      &:after {
+        background: #d44132;
+      }
+    }
+    &.twi{
+      &:after {
+        background: #41abe1;
+      }
+    }
+    &.fb{
+      &:after {
+        background: #4267b2;
+      }
+    }
+  }
+}
+// Share icon
+.post-share-icon{
+  display: inline-flex;
+  z-index: -1;
+  position: absolute;
+  bottom: 45px;
+  right: 15px;
+  flex-direction: column-reverse;
+  flex-wrap: wrap;
+  a{
+    opacity: 0;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    margin: 4px 0;
+    color: #fff!important;
+    position: relative;
+    overflow: hidden;
+    transform: translateY(7px);
+    transition: opacity .1s ease 0s,transform .1s ease 0s,-webkit-transform .1s ease 0s,color .3s ease;
+    i{
+      z-index: 2;
+    }
+    &:hover{
+      transition: color .3s ease;
+      color: #fff!important;
+      &:after{
+        transform: translate(0) scale(1.2);
+      }
+    }
+    &:after{
+      transition: transform .3s ease 0s;
+      position: absolute;
+      width: 35px;
+      height: 35px;
+      border-radius: 100%;
+      transform: translate(0, 35px);
+      content: '';
+    }
+    &:nth-child(1){
+      transition: opacity .3s ease 0s,transform .3s ease 0s,-webkit-transform .3s ease 0s;
+    }
+    &:nth-child(2){
+      transition: opacity .3s ease .1s,transform .3s ease .1s,-webkit-transform .3s ease .1s;
+    }
+    &:nth-child(3){
+      transition: opacity .3s ease .2s,transform .3s ease .2s,-webkit-transform .3s ease .2s;
+    }
+    &:nth-child(4){
+      transition: opacity .3s ease .3s,transform .3s ease .3s,-webkit-transform .3s ease .3s;
+    }
+    &:nth-child(5){
+      transition: opacity .3s ease .4s,transform .3s ease .4s,-webkit-transform .3s ease .3s;
+    }
+    &:nth-child(6){
+      transition: opacity .3s ease .5s,transform .3s ease .5s,-webkit-transform .3s ease .3s;
+    }
+    &:nth-child(7){
+      transition: opacity .3s ease .6s,transform .3s ease .6s,-webkit-transform .3s ease .3s;
+    }
+  }
+  &.opened{
+    z-index: 1;
+    a{
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}

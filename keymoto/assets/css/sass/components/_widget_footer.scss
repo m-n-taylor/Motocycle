@@ -1,0 +1,95 @@
+/*-------------------------------------------------------------------
+
+==  Phone Footer Widget
+
+-------------------------------------------------------------------*/
+@import "widget_footer/_widget_footer_phone.scss";
+/*-------------------------------------------------------------------
+
+==  Phone Footer Widget
+
+-------------------------------------------------------------------*/
+@import "widget_footer/_widget_footer_social.scss";
+
+/*-------------------------------------------------------------------
+
+==  Dealer Info Widget
+
+-------------------------------------------------------------------*/
+@import "widget_footer/_widget_footer_dealer_info.scss";
+
+/*-------------------------------------------------------------------
+
+==  Other Widget Style
+
+-------------------------------------------------------------------*/
+.footer-widget-area{
+  .widget{
+    .widget--title{
+      color: #fff;
+      font-size: size_px2rem(19px);
+      margin-bottom: size_px2rem(35px);
+    }
+    +.widget{
+      margin-top: size_px2rem(30px);
+    }
+  }
+  .widget_nav_menu{
+    ul{
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      li{
+        line-height: 1;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        padding-top: size_px2rem(30px);
+        a{
+          transition: .3s ease;
+          position: relative;
+          padding-left: size_px2rem(30px);
+          color: rgba(255,255,255,.4);
+          &:before{
+            background: #222;
+            display: inline-block;
+            content: '';
+            width: size_px2rem(17px);
+            height: size_px2rem(17px);
+            transition: .3s ease;
+            position: absolute;
+            left: 0;
+            bottom: size_px2rem(1px);
+          }
+          &:after{
+            transition: .3s ease;
+            content: '';
+            width: 0;
+            height: 0;
+            border-style: solid;
+            left: size_px2rem(6px);
+            bottom: size_px2rem(6px);
+            z-index: 2;
+            position: absolute;
+            border-width: size_px2rem(3.5px) 0 size_px2rem(3.5px) size_px2rem(5.5px);
+            border-color: transparent transparent transparent rgba(255,255,255,.7);
+          }
+          &:hover{
+            color: #fff;
+            transition: .3s ease;
+            &:before{
+              transition: .3s ease;
+            }
+            &:after{
+              transition: .3s ease;
+              border-color: transparent transparent transparent #fff;
+            }
+          }
+        }
+        &:first-child{
+          padding-top: 0;
+        }
+      }
+    }
+  }
+}

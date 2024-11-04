@@ -1,0 +1,23 @@
+.widget_tag_cloud{
+  .tagcloud{
+    a{
+      border-radius: size_px2rem(2px);
+      line-height: 1;
+      font-size: size_px2rem(11px)!important;
+      padding: size_px2rem(10px) size_px2rem(24px);
+      margin-right: size_px2rem(7px);
+      margin-bottom: size_px2rem(7px);
+      display: inline-flex;
+      background: #f8f8f8;
+      color: #222;
+      border: none;
+      &:hover{
+        color: #fff;
+        transition: all .3s ease;
+        box-shadow: 0 size_px2rem(8px) size_px2rem(20px) 0 rgba(0, 0, 0, 0.5);
+        transform: perspective(100px) translateY(-2px);
+        z-index: 1;
+      }
+    }
+  }
+}

@@ -1,0 +1,66 @@
+.widget_templines_theme_helper_wmpl_mailchimp_footer{
+  .footer-mailchimp-wrap{
+    padding-top: size_px2rem(150px);
+    padding-bottom: size_px2rem(90px);
+    background-repeat: no-repeat!important;
+    background-size: cover!important;
+    clip-path: polygon(10% 0%, 100% 10%, 100% 100%, 0 100%, 0 14%);
+    .container-content{
+      display: flex;
+      justify-content: space-between;
+      .title-content-wrap{
+        flex-grow: 0;
+        margin-right: size_px2rem(60px);
+        .mailchimp-sub-title-content{
+          font-size: size_px2rem(18px);
+        }
+        .mailchimp-title-content{
+          font-size: size_px2rem(46px);
+          color: #fff;
+          margin-top: size_px2rem(10px);
+          line-height: 1;
+          @include mobile{font-size: size_px2rem(32px);}
+        }
+      }
+      .mailchimp-content-wrap{
+        flex-grow: 1;
+        display: flex;
+        align-items: flex-end;
+        .mailchimp-footer-form{
+          width: 100%;
+          form{
+            .mc4wp-form-fields{
+              display: flex;
+              input{
+                flex-grow: 1;
+                width: auto;
+                margin-bottom: 0;
+              }
+              button{
+                margin-left: size_px2rem(5px);
+                border-radius: size_px2rem(2px);
+                flex-grow: 0;
+                margin-right: size_px2rem(11px);
+                &:hover{
+                  color: #222222!important;
+                  background-color:#ffffff!important;
+                  .button-decor{
+                    &:after{
+                      border-color: transparent transparent transparent #fff;
+                    }
+                  }
+                }
+                .button-decor{
+                  background-color:#ffffff;
+                  &:after{
+                    border-color: transparent transparent transparent #222;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.fl-woocommerce-filter-sidebar{
+  margin-bottom: 40px;
+  &.disable{
+    display: none;
+  }
+  .sidebar_container{
+    padding: 40px 40px;
+    border: 1px solid;
+    .widget{
+      width: 25%;
+      float: left;
+      padding: 0 20px;
+      margin-bottom: 0;
+      &:nth-child(4n+1){
+        clear: left;
+      }
+      &:after{
+        display: none;
+      }
+    }
+  }
+}

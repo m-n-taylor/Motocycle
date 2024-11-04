@@ -1,0 +1,67 @@
+.templines-bg-decor-top-left {
+  clip-path: polygon(20% 0%, 100% 10%, 100% 100%, 0 100%, 0 10%);
+}
+.templines-bg-decor-top-right {
+  clip-path: polygon(80% 0%, 100% 10%, 100% 100%, 0 100%, 0 10%);
+}
+.templines-bg-decor-bottom-right {
+  clip-path: polygon(88% 100%, 100% 80%, 100% 0, 100% 0, 0 0, 0 90%);
+}
+.templines-bg-decor-bottom-left {
+  clip-path: polygon(20% 100%, 100% 80%, 100% 0, 100% 0, 0 0, 0 90%);
+}
+
+
+.custom-container-max-with-with-icon{
+  position: relative;
+  max-width: size_px2rem(570px);
+  &:before{
+    background: url(../css/images/decor-logo.svg);
+    display: block;
+    position: absolute;
+    top: size_px2rem(-110px);
+    left: size_px2rem(310px);
+    width: size_px2rem(468px);
+    height: size_px2rem(181px);
+    content: '';
+  }
+}
+
+.review-column-with-decor{
+  &:before{
+    background: url(../css/images/decor-logo.svg);
+    display: block;
+    position: absolute;
+    top: size_px2rem(-30px);
+    left: size_px2rem(340px);
+    width: size_px2rem(468px);
+    height: size_px2rem(181px);
+    content: '';
+  }
+}
+
+[data-decor-text='left-top']{
+  position: relative;
+  &:before{
+    display: flex;
+    content: attr(data-decor-text-content);
+  }
+}
+[data-decor-text='bottom-center']{
+  position: relative;
+  &:before{
+    position: absolute;
+    bottom: size_px2rem(-35px);
+    left: 0;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    content: attr(data-decor-text-content);
+    font-size: size_px2rem(140px);
+    line-height: size_px2rem(140px);
+    opacity: 0.5;
+    color: transparent;
+    -webkit-text-stroke: 1px #dddddd;
+  }
+}

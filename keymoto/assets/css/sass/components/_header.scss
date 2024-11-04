@@ -1,0 +1,47 @@
+.fl-page-heading{
+  min-height: size_px2rem(520px);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  padding-top: size_px2rem(125px);
+  position: relative;
+  clip-path: polygon(88% 100%, 100% 80%, 100% 0, 100% 0, 0 0, 0 90%);
+  z-index: 1;
+  .fl--sub-title{
+    text-transform: uppercase;
+    font-size: size_px2rem(17px);
+  }
+  .header-title{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: size_px2rem(65px);
+    margin-bottom: size_px2rem(65px);
+  }
+  .breadcrumbs{
+    text-align: right;
+    font-size: size_px2rem(13px);
+    color: #fff;
+    .breadcrumbs-delimiter{
+      position: relative;
+      padding: 0 size_px2rem(10px);
+      &:after{
+        content: '';
+        height: size_px2rem(14px);
+        background: #fff;
+        position: absolute;
+        left: 50%;
+        top: size_px2rem(2px);
+        width: size_px2rem(1px);
+        display: inline-block;
+      }
+    }
+    a{
+      transition: .3s ease;
+      &:hover{
+        color: #ffffff;
+        transition: .3s ease;
+      }
+    }
+  }
+}

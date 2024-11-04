@@ -1,0 +1,41 @@
+.widget-contact-form{
+  margin-top: size_px2rem(27px);
+  padding-top: size_px2rem(50px);
+  padding-left: size_px2rem(30px);
+  padding-right: size_px2rem(30px);
+  padding-bottom: size_px2rem(50px);
+  border: size_px2rem(1px) solid #eeeeee;
+  .widget-title {
+    position: relative;
+    margin-bottom: size_px2rem(25px);
+    font-size: size_px2rem(21px);
+    color: #222222;
+    text-transform: uppercase;
+    .widget--subtitle{
+      font-size: size_px2rem(11px);
+      margin-top: size_px2rem(7px);
+      text-transform: uppercase;
+      color: #666666;
+      letter-spacing: .2rem;
+    }
+    &:after{
+      position: absolute;
+      left: size_px2rem(-31px);
+      top: 0;
+      content: '';
+      height: 100%;
+      width: size_px2rem(2px);
+      background: #e63619;
+      z-index: 3;
+    }
+  }
+  .templines-keymoto-dealer-contact-form{
+    textarea{
+      height: size_px2rem(130px);
+    }
+    button{
+      p{display: none}
+    }
+  }
+
+}

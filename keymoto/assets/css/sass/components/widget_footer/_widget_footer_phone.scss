@@ -1,0 +1,35 @@
+.widget_templines_theme_helper_contact_phone_number{
+  .footer-phone-number-wrap{
+    padding: size_px2rem(30px);
+    background: #222222;
+    display: flex;
+    flex-wrap: wrap;
+    .icon-wrap{
+      padding-top: size_px2rem(6px);
+      padding-right: size_px2rem(20px);
+      flex-grow: 0;
+      @include mobile {padding-right: size_px2rem(15px)}
+      i{
+        font-size: size_px2rem(35px);
+      }
+    }
+    .footer-phone-number-content{
+      flex-grow: 1;
+      margin-top: size_px2rem(5px);
+      .slogan-content{
+        font-size: size_px2rem(14px);
+      }
+      .phone-number-content{
+        .phone-number-link{
+          color: #fff;
+          transition: .3s ease;
+          font-size: size_px2rem(26px);
+          @include mobile {font-size: size_px2rem(18px)}
+          &:hover{
+            transition: .3s ease;
+          }
+        }
+      }
+    }
+  }
+}

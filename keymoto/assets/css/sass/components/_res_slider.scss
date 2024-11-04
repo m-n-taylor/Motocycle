@@ -1,0 +1,109 @@
+.keymoto-rev-slider-arrow{
+  width: 20px;
+  height: 20px;
+  background: #222!important;
+  opacity: 1!important;
+  text-indent: -9999999px;
+  transition: background-color .3s ease;
+  &:after{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate3d(1px, -50%, 0);
+    transform: translate3d(1px, -50%, 0);
+
+  }
+  &.tp-leftarrow{
+      left: auto!important;
+      top: auto!important;
+      right: 15.3% !important;
+      bottom: 13.5%!important;
+      transform: translate3d(0,0,0)!important;
+      &:after{
+        right: 42%;
+        border-width: 0.28125rem 0.40625rem 0.28125rem 0;
+        border-color: transparent #fff transparent transparent;
+      }
+  }
+  &.tp-rightarrow{
+    left: auto!important;
+    top: auto!important;
+    right: 12.8%!important;
+    bottom: 13.5%!important;
+    transform: translate3d(0,0,0)!important;
+    &:after{
+      right: 37%;
+      border-width: 0.28125rem 0 0.28125rem 0.40625rem;
+      border-color: transparent transparent transparent #fff;
+    }
+  }
+  &:hover{
+    opacity: 1!important;
+  }
+}
+
+
+.rev-slider-button-wrap{
+ display: flex;
+  a{
+    text-decoration: none!important;
+    line-height: 1!important;
+    margin-right: size_px2rem(25px)!important;
+    &:first-child{
+      margin-right: 15px;
+    }
+  }
+
+  .fl-default-button {
+    padding: 20px 35px!important;
+    color: #fff !important;
+    display: inline-flex!important;
+    font-size: 15px!important;
+    transition: .3s ease;
+    position: relative!important;
+    letter-spacing: -0.25px!important;
+    font-weight: 500!important;
+  }
+  .fl-default-button .button-decor {
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: .3s ease;
+    &:after{
+      content: '';
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 4.5px 0 4.5px 6px;
+      border-color: transparent transparent transparent #fff;
+      transition: .6s ease;
+    }
+  }
+  .fl-default-button.secondary-button-style .button-decor {
+    background-color: #e63619;
+  }
+  .fl-default-button.primary-button-style .button-decor {
+    background-color: #222222;
+  }
+}
+
+.rev-slider-slogan{
+  color: transparent!important;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.9);
+  .rs_splitted_chars{
+    color: transparent!important;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.9);
+  }
+}

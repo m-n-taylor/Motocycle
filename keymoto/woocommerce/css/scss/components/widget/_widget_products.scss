@@ -1,0 +1,46 @@
+.widget_products,.widget_top_rated_products{
+  ul{
+    li{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      a{
+        line-height: 1;
+      }
+      .product_thumbnail{
+        img{
+          float: left;
+          margin-right: 15px;
+          width: 60px;
+          margin-left: 0!important;
+        }
+      }
+      .product_summary{
+        max-width: calc(100% - 75px);
+        width: 100%;
+        .product-title{
+          flex-grow: 0;
+          width: 100%;
+          font-size: 13px;
+          color: #1b1e21;
+          transition: .3s ease;
+          margin-bottom: 5px;
+          &:hover{
+            transition: .3s ease;
+          }
+        }
+        .product-rating{
+          margin: 7px 0;
+          width: 100%;
+          color: $star_color;
+        }
+        .product-price{
+          line-height: 1;
+          margin-top: 7px;
+        }
+
+      }
+
+    }
+  }
+}

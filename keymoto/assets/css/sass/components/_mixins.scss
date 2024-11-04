@@ -1,0 +1,54 @@
+@function size_px2rem($size) {
+  $remSize: $size / 16px;
+  @return #{$remSize}rem;
+} // .html{font-size:size_px2rem(16px);} - convert px to REM
+
+
+@mixin calc_convert($property, $expression) {
+  #{$property}: -webkit-calc(#{$expression});
+  #{$property}: -moz-calc(#{$expression});
+  #{$property}: calc(#{$expression});
+} // to rem  @include calc_convert(max-width, "100% - " size_px2rem(100px));
+
+@mixin wh_border-radius($size, $radius: 0) {
+  width: $size;
+  height: $size;
+
+  @if $radius != 0 {
+    border-radius: $radius;
+  }
+} // .html { @include wh_border-radius(100px, $radius: 4px); }
+
+@mixin push--auto {
+  margin: {
+    left: auto;
+    right: auto;
+  }
+}// @include push--auto();
+
+// Media
+$mobile: 768;
+$tablet: 991;
+$large: 1024;
+$desktop: 1280;
+
+@mixin desktop {
+  @media (max-width: $desktop+px){
+    @content;
+  }
+}
+@mixin large {
+  @media (max-width: $large+px){
+    @content;
+  }
+}
+@mixin tablet {
+  @media (max-width: $tablet+px){
+    @content;
+  }
+}
+@mixin mobile {
+  @media (max-width: $mobile+px){
+    @content;
+  }
+}  // Using: .div {@include mobile {@content}}

@@ -1,0 +1,29 @@
+.yith-woo-ajax-reset-navigation{
+ a.button{
+   position: relative;
+   padding: 0;
+   background: transparent;
+   font-size: 12px;
+   color: #1c1f23;
+   transition: .3s ease-in-out;
+   font-weight: 400;
+   &:hover{
+     opacity: .7;
+     transition: .3s ease-in-out;
+     background: transparent;
+   }
+   &:before{
+     content: "\f021";
+     margin-right: 10px;
+     font: normal normal normal 14px/1 FontAwesome;
+   }
+ }
+}
+
+.fl-woocommerce-filter-sidebar{
+  .yith-woo-ajax-reset-navigation{
+    width: 100%!important;
+    text-align: right;
+  }
+}
+

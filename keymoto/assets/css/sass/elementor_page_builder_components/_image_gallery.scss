@@ -1,0 +1,19 @@
+.page-builder-image-gallery-wrap{
+  margin: 0 auto;
+  max-width: size_px2rem(1420px);
+  padding-right: size_px2rem(15px);
+  padding-left: size_px2rem(15px);
+  .fl-gallery{
+    margin-left: size_px2rem(-15px);
+    margin-right: size_px2rem(-15px);
+    margin-top: size_px2rem(-15px);
+    display: flex;
+    flex-wrap: wrap;
+    .gallery-builder-item{
+      width: 25%;
+      .entry-content{
+        padding: size_px2rem(15px);
+      }
+    }
+  }
+}

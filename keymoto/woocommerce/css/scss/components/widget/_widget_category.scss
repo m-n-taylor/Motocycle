@@ -1,0 +1,128 @@
+.widget_product_categories{
+  ul{
+    li{
+      line-height: 1;
+      position: relative;
+      i{
+        transition: .3s ease-in-out;
+        cursor: pointer;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 35px;
+        width: 30px;
+        align-items: center;
+        display: inline-flex;
+        z-index: 5;
+        &:after{
+          transition: .3s ease-in-out;
+          content: "\f105";
+          font: normal normal normal 14px/1 FontAwesome;
+        }
+      }
+      a{
+        padding: 11.5px 0;
+        padding-left: 30px;
+        display: flex;
+        font-size: 12px;
+        color: #7b7d7f;
+        z-index: 1;
+        position: relative;
+      }
+      ul{
+        margin-left: 15px;
+        li{
+          &:not(cat-parent){
+            i{
+              &:after{
+                display: inline-flex;
+                border-radius: 50%;
+                content: "";
+                width: 7px;
+                height: 7px;
+                border: 1px solid #cccecf;
+              }
+            }
+            &.current-cat{
+              i{
+                &:after{
+                  transition: .2s ease-in-out;
+
+                }
+              }
+            }
+            &:hover{
+              i{
+                &:after{
+                  transition: .2s ease-in-out;
+
+                }
+              }
+            }
+          }
+          a{
+
+          }
+        }
+      }
+      &.cat-parent{
+        i{
+          &:hover{
+            &:after{
+              transform: rotate(90deg);
+              transition: transform .3s ease-in-out;
+            }
+          }
+        }
+        .children{
+          display: none;
+        }
+      }
+      &:hover{
+
+        >a{
+          color: #1c1f23;
+
+        }
+
+      }
+      &.opened,&.current-cat{
+        >a{
+          color: #1c1f23;
+        }
+        i{
+          &:after{
+            transform: rotate(90deg);
+            transition: transform .2s ease-in-out;
+          }
+        }
+        .children{
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+// Product Categories
+.widget_product_categories{
+
+    .select2-container{
+      vertical-align: top!important;
+      height: 33px;
+
+      .select2-selection--single{
+        border-radius: 0;
+        margin: 0;
+        border: 0;
+        border-bottom: solid 1px #eaeaeb;
+        height: 33px;
+        background: 0 0;
+        position: relative;
+      }
+      .select2-selection__placeholder{
+        font-size: 12px;
+        color: #7b7d7f!important;
+      }
+    }
+}

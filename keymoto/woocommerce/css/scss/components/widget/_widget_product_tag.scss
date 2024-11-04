@@ -1,0 +1,20 @@
+.widget_product_tag_cloud{
+  a{
+    display: inline-block;
+
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 0 7px;
+    font-size: 11px!important;
+    color: #fff!important;
+    border-radius: 3px;
+    transition: all .3s ease;
+    &:hover{
+      background-color: #1f1f1f!important;
+      transition: all .3s ease;
+      transform: perspective(100px) translateY(-2px);
+      z-index: 1;
+      color: #fff!important;
+    }
+  }
+}

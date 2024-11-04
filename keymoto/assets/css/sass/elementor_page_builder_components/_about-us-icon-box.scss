@@ -1,0 +1,43 @@
+.page-builder-about-us-icon-box-wrap{
+  position: relative;
+  .icon-wrap{
+    position: absolute;
+    left: size_px2rem(15px);
+    top: size_px2rem(15px);
+    i{
+      font-size: size_px2rem(115px);
+      opacity: .1;
+      margin-top: size_px2rem(-16px);
+      margin-left: size_px2rem(-14px);
+    }
+  }
+  .entry-content{
+    position: relative;
+    text-align: center;
+    background: red;
+    padding: size_px2rem(25px);
+    padding-bottom: 0;
+    .about-us-icon-box-text-content{
+      position: relative;
+      margin-bottom: size_px2rem(30px);
+      padding-bottom: size_px2rem(170px);
+      .icon-box-title{
+        text-transform: uppercase;
+        margin-bottom: size_px2rem(15px);
+        margin-top: size_px2rem(25px);
+        font-size: size_px2rem(16px);
+      }
+      .icon-box-content{
+        font-size: size_px2rem(15px);
+        padding-left: size_px2rem(10px);
+        padding-right: size_px2rem(10px);
+      }
+    }
+    .about-us-icon-box-image-wrap{
+      position: absolute;
+      left: size_px2rem(15px);
+      max-width: calc(100% - 30px);
+      bottom: size_px2rem(-45px);
+    }
+  }
+}

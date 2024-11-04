@@ -1,0 +1,121 @@
+.page-builder-icon-box-wrap{
+  &.icon-box-style-one{
+    display: flex;
+    .icon-box-left-content{
+      padding-right: size_px2rem(20px);
+      .icon-wrap{
+        margin-top: size_px2rem(4px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #eeeeee;
+        border-radius: 100%;
+        padding: size_px2rem(10px);
+        width: size_px2rem(60px);
+        height: size_px2rem(60px);
+        i{
+          transition: .3s ease;
+          font-size:size_px2rem(40px);
+          color: #222222;
+          &[class*='templines-']{
+            font-size: size_px2rem(65px);
+          }
+        }
+      }
+    }
+    .icon-box-right-content{
+      .icon-box-title{
+        margin-bottom: size_px2rem(14px);
+      }
+    }
+    &:hover{
+      .icon-box-left-content{
+        .icon-box-left-content{
+          .icon-wrap{
+            i{
+              transition: .3s ease;
+            }
+          }
+        }
+      }
+    }
+  }
+  &.icon-box-style-two{
+    display: flex;
+    align-items: center;
+    .icon-box-left-content{
+      padding-right: size_px2rem(12px);
+      .icon-wrap{
+        margin-top: size_px2rem(4px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #eeeeee;
+        border-radius: 100%;
+        padding: size_px2rem(10px);
+        width: size_px2rem(50px);
+        height: size_px2rem(50px);
+        i{
+          transition: .3s ease;
+          font-size:size_px2rem(40px);
+          color: #222222;
+          &[class*='templines-']{
+            font-size: size_px2rem(57px);
+          }
+        }
+      }
+    }
+    .icon-box-right-content{
+      .icon-box-title{
+        margin-bottom: 0;
+        font-size: size_px2rem(16px);
+      }
+    }
+    &:hover{
+      .icon-box-left-content{
+        .icon-box-left-content{
+          .icon-wrap{
+            i{
+              transition: .3s ease;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Contact Form Icon Box
+.page-builder-icon-box-contact-form-wrap{
+  .icon-box-top-content{
+    .icon-box-contact-form-img-wrap{
+      text-align: center;
+      img{
+        max-width: size_px2rem(120px);
+      }
+    }
+  }
+  .icon-box-bottom-content{
+    text-align: center;
+    margin-top: 30px;
+    .icon-box-title{
+      font-size: size_px2rem(15px);
+      margin-bottom: 5px;
+    }
+    .icon-box-content{
+      font-size: size_px2rem(17px);
+      color: #222222;
+      margin-bottom: size_px2rem(15px);
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+  }
+  &.icon-box-style-address{
+    .icon-box-content{
+      margin-bottom: 0;
+      line-height: size_px2rem(36px);
+    }
+  }
+}
+

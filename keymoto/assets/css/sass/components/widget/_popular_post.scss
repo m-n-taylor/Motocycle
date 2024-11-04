@@ -1,0 +1,35 @@
+.widget_fl_theme_helper_popular_post{
+  .fl--last-post{
+    margin-bottom: 25px;
+    &:last-child{
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: 0;
+    }
+    .fl-last-post-img{
+      flex-grow: 0;
+      margin-bottom: 10px;
+      img{
+        min-width: 100%;
+      }
+    }
+    .fl-last-post-info{
+      .fl-text-medium-style{
+        .fl-post-title{
+          font-size: 14px;
+          margin-bottom: 0;
+        }
+        line-height: 1.4;
+        a{
+          transition: .3s ease;
+          &:hover{
+            transition: .3s ease;
+          }
+        }
+      }
+      .post-date{
+        font-size: 13px;
+      }
+    }
+  }
+}

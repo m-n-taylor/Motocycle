@@ -1,0 +1,20 @@
+.page-builder-quote-box-wrap{
+  .entry-content{
+    display: flex;
+    .right-content{
+      padding-left: size_px2rem(25px);
+      margin-left: size_px2rem(25px);
+      border-left: 4px solid red;
+      .title-quote-wrap{
+        .quote-title{
+          color: #fff;
+          font-size: size_px2rem(21px);
+          margin-bottom: size_px2rem(15px);
+        }
+      }
+      .content-quote-wrap{
+        color: #fff;
+      }
+    }
+  }
+}

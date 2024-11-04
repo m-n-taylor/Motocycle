@@ -1,0 +1,362 @@
+/*-------------------------------------------------------------------
+
+==  max-width 1040px
+
+-------------------------------------------------------------------*/
+@media screen and (max-width: 1440px) {
+  .woo_image_hover_enable .hover-image{
+    width: 100%;
+  }
+  .fl_content_story{
+    &.container-fluid{
+      .products{
+        &.fl-grid-style{
+          // Five Column
+          &.fl-grid--five-column{
+            .fl-grid-item{
+              width: 25%!important;
+              &:nth-child(5n+1){
+                clear: none!important;
+              }
+              &:nth-child(4n+1){
+                clear: left!important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/*-------------------------------------------------------------------
+
+==  max-width 1040px
+
+-------------------------------------------------------------------*/
+@media screen and (max-width: 1040px) {
+  .products{
+    &.fl-grid-style{
+      // Three Column
+      &.fl-grid--three-column{
+        .fl-grid-item{
+          .fl-woo-item-left-content{
+            .fl--add-to-cart-btn{
+              a{
+                padding: 15px 17px;
+              }
+            }
+          }
+        }
+      }
+      // Five Column
+      &.fl-grid--five-column{
+        .fl-grid-item{
+          width: 25%!important;
+          &:nth-child(5n+1){
+            clear: none!important;
+          }
+          &:nth-child(4n+1){
+            clear: left!important;
+          }
+        }
+      }
+    }
+  }
+
+  .fl_content_story{
+    &.container-fluid{
+      .products{
+        &.fl-grid-style{
+          // Five Column
+          &.fl-grid--five-column{
+            .fl-grid-item{
+              width: 33.33333%!important;
+              &:nth-child(4n+1){
+                clear: none!important;
+              }
+              &:nth-child(3n+1){
+                clear: left!important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*-------------------------------------------------------------------
+
+==  max-width 768px
+
+-------------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+  .woocommerce .col2-set .col-1, .woocommerce .col2-set .col-2, .woocommerce-page .col2-set .col-1, .woocommerce-page .col2-set .col-2{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .fl-single-product{
+    .fl-slider-arrows{
+      display: none;
+    }
+    .product_style_two{
+      .fl-single-left-content{
+        margin-bottom: 20px;
+      }
+    }
+    .product_style_one{
+      .fl-single-left-content{
+        margin-bottom: 20px;
+      }
+    }
+
+    .product_style_three{
+      .fl-single-left-content{
+        .fl-left-container{
+          .fl--product-carousel{
+            padding-top: 45px;
+            max-height: 360px;
+          }
+        }
+      }
+      .fl-single-right-content{
+        margin-top: 0;
+      }
+    }
+
+  }
+
+  .woocommerce div.product .woocommerce-tabs ul.tabs li{
+    padding: 0 15px!important;
+  }
+  .fl-full-screen-product-container.product_style_two,.fl-full-screen-product-container.product_style_one{
+    padding-bottom: 0;
+  }
+  form{
+    &.checkout{
+      #customer_details{
+        .col-2{
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+  .woocommerce .cart-collaterals .cart_totals table.shop_table tbody tr td{
+    width: 100%;
+  }
+  table.shop_table{
+    &.cart{
+      .product-remove{
+        text-align: center!important;
+      }
+      td.actions{
+        .coupon{
+          .button{
+            margin-right: 0;
+          }
+        }
+        .update--cart-content{
+          margin-top: 10px;
+          float: none!important;
+        }
+      }
+    }
+
+  }
+
+
+  body{
+    &.woocommerce{
+      .fl_content{
+        &.position_sidebar_left{
+          width: 100%;
+          max-width: none;
+        }
+      }
+      .sidebar-container{
+        &.sidebar_left{
+          width: 100%;
+          max-width: none;
+        }
+      }
+    }
+  }
+
+  .fl-woo-filter{
+    &.fl-filter-style-one{
+      flex-wrap: wrap;
+      .woocommerce-result-count-wrapper{
+        width: 100%;
+        order: 1;
+        margin-top: 20px;
+        text-align: center;
+        .woocommerce-result-count{
+          width: 100%;
+        }
+      }
+    }
+  }
+  .products{
+    &.fl-grid-style{
+      // Three Column
+      &.fl-grid--three-column{
+        .fl-grid-item{
+          width: 50%!important;
+          &:nth-child(3n+1){
+            clear: none!important;
+          }
+          &:nth-child(2n+1){
+            clear: left!important;
+          }
+          .fl-woo-item-left-content{
+            .fl-woo-image-cover{
+              text-align: center!important;
+            }
+          }
+        }
+      }
+      // Five Column
+      &.fl-grid--five-column{
+        .fl-grid-item{
+          width: 33.33333%!important;
+          &:nth-child(4n+1){
+            clear: none!important;
+          }
+          &:nth-child(3n+1){
+            clear: left!important;
+          }
+        }
+        .fl-woo-item-left-content{
+          .fl-woo-image-cover{
+            text-align: center!important;
+          }
+        }
+      }
+    }
+  }
+
+  .fl-woo-filter .woocommerce-result-count-wrapper .fl-filter-setting .filter-text .text{
+    margin-right: 33px;
+  }
+  .fl-woo-filter.fl-filter-style-two .grid-selector{
+    margin-left: 40px;
+  }
+
+  .fl_content_story{
+    &.container-fluid{
+      .products{
+        &.fl-grid-style{
+          // Five Column
+          &.fl-grid--five-column{
+            .fl-grid-item{
+              width: 50%!important;
+              &:nth-child(3n+1){
+                clear: none!important;
+              }
+              &:nth-child(2n+1){
+                clear: left!important;
+              }
+            }
+            .fl-woo-item-left-content{
+              .fl-woo-image-cover{
+                text-align: center!important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .woocommerce .woocommerce-ordering, .woocommerce-page .woocommerce-ordering{
+    float: left;
+  }
+  .wc-tab#tab-reviews form.comment-form .input-fields-wrapper{
+    width: 100%;
+    padding-right:0;
+  }
+  .wc-tab#tab-reviews form.comment-form .author-comment{
+    width: 100%;
+    padding-left:0;
+  }
+  .woocommerce table.shop_table tbody tr td.actions .coupon input#coupon_code{
+    min-width: auto;
+  }
+  .woocommerce table.cart td.actions .coupon{
+    margin-bottom: 20px;
+  }
+}
+/*-------------------------------------------------------------------
+
+==  max-width 550px
+
+-------------------------------------------------------------------*/
+@media screen and (max-width: 550px) {
+  .products{
+    &.fl-grid-style{
+      // Three Column
+      &.fl-grid--three-column{
+        .fl-grid-item{
+          width: 100%!important;
+          &:nth-child(2n+1){
+            clear: none!important;
+          }
+        }
+      }
+      // Five Column
+      &.fl-grid--five-column{
+        .fl-grid-item{
+          width: 100%!important;
+          &:nth-child(3n+1){
+            clear: none!important;
+          }
+          &:nth-child(1n+1){
+            clear: left!important;
+          }
+        }
+      }
+    }
+  }
+  .fl_content_story{
+    &.container-fluid{
+      .products{
+        &.fl-grid-style{
+          // Five Column
+          &.fl-grid--five-column{
+            .fl-grid-item{
+              width: 100%!important;
+              &:nth-child(2n+1){
+                clear: none!important;
+              }
+              &:nth-child(1n+1){
+                clear: left!important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+  .fl-header-woo-category-wrapper{
+    ul{
+      margin-top: 10px;
+      flex-wrap: wrap;
+      li{
+        padding: 0!important;
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  .woocommerce table.shop_table tbody tr td.actions .coupon input#coupon_code{
+    min-width: 100%;
+    margin-bottom: 20px;
+  }
+  table.shop_table.cart td.actions .coupon .button{
+    width: 100%;
+  }
+}
+

@@ -1,0 +1,157 @@
+.page-builder-resent-moto-item-wrap{
+  display: flex;
+  flex-wrap: wrap;
+  .templines-pixad-grid-item{
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+    padding: 0 size_px2rem(15px);
+    .entry-content{
+      background: #f7f7f7;
+      margin-top: size_px2rem(30px);
+      transition: .4s ease;
+      .top-content{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: size_px2rem(27px) size_px2rem(38px);
+        .title-content{
+          flex-grow: 1;
+          .title-grid{
+            font-size: size_px2rem(22px);
+            margin-bottom: 0;
+          }
+          .title-grid-slogan{
+            font-size: size_px2rem(13px);
+            text-transform: uppercase;
+          }
+        }
+        .price-content{
+          flex-grow: 0;
+          font-size: size_px2rem(23px);
+        }
+      }
+      .middle-content{
+        position: relative;
+        .mask{
+          visibility: hidden;
+          opacity: 0;
+          position: absolute;
+          left: 0;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          background: #222222;
+          transition: .2s ease;
+        }
+        .mask-cross{
+          visibility: hidden;
+          opacity: 0;
+          &:before{
+            content: '';
+            display: inline-block;
+            position: absolute;
+            width: size_px2rem(35px);
+            height: size_px2rem(2px);
+            background: #fff;
+            left: 50%;
+            top: 50%;
+            transform: translate3d(-50%,-50%,0);
+            opacity: 1;
+          }
+          &:after{
+            content: '';
+            display: inline-block;
+            position: absolute;
+            width: size_px2rem(2px);
+            height: size_px2rem(35px);
+            background: #fff;
+            left: 50%;
+            top: 50%;
+            transform: translate3d(-50%,-50%,0);
+            opacity: 1;
+          }
+        }
+      }
+      .bottom-content{
+        .bottom-info-top-content{
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          padding: size_px2rem(20px) size_px2rem(15px);
+          border-bottom: size_px2rem(1px) solid #dddddd;
+          .main-info-item-wrap{
+            flex-grow: 1;
+            text-align: center;
+            border-right: size_px2rem(1px) solid #dddddd;
+            .main-info-item-title{
+              font-size: size_px2rem(16px);
+              color: #222;
+              line-height: 1.2;
+              margin-bottom: size_px2rem(7px);
+            }
+            .main-bottom-info{
+              line-height: 1;
+              font-size: size_px2rem(14px);
+            }
+            &:last-child{
+              border-right: 0;
+            }
+          }
+        }
+        .bottom-info-bottom-content{
+          padding: size_px2rem(25px) size_px2rem(35px) size_px2rem(18px) size_px2rem(35px);
+          .list-grid--info{
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: size_px2rem(-15px);
+            .list-grid-item{
+              margin-top: size_px2rem(15px);
+              flex: 0 0 50%;
+              max-width: 50%;
+              display: flex;
+              .icon-content{
+                margin-right: size_px2rem(10px);
+                i{
+                  position: relative;
+                  top: size_px2rem(-2px);
+                  color: #222222;
+                  font-size: size_px2rem(17px);
+                }
+              }
+              .text-content-wrap{
+                .text-content-title{
+                  line-height: 1.2;
+                  text-transform: uppercase;
+                  color: #222;
+                  font-size: size_px2rem(13px);
+                }
+                .text-content{
+                  font-size: size_px2rem(12px);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    &:hover{
+      .entry-content{
+        background: #ffff;
+        box-shadow: 0 size_px2rem(5px) size_px2rem(32px) 0 rgba(0, 0, 0, 0.1);
+        transition: .4s ease;
+        .middle-content{
+          .mask{
+            visibility: visible;
+            opacity: .7;
+            transition: .2s ease;
+          }
+          .mask-cross{
+            visibility: visible;
+            opacity: 1;
+            transition: .2s ease;
+          }
+        }
+      }
+    }
+  }
+}

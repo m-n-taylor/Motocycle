@@ -1,0 +1,163 @@
+.templines-moto-slider-wrap{
+  .elementor-column-gap-default>.elementor-row>.elementor-column>.elementor-element-populated{
+    padding: 0;
+  }
+  .templines-moto-slider{
+    margin: 0 size_px2rem(-15px);
+    .slider-item{
+      display: flex;
+      flex-wrap: wrap;
+      .col-md-7{
+        .entry-content{
+          padding-left: size_px2rem(10px);
+        }
+      }
+      .title-wrap{
+        color: #222222;
+        margin-top: size_px2rem(32px);
+        font-size: size_px2rem(30px);
+        .title{
+          margin-bottom: size_px2rem(10px);
+        }
+      }
+      .price-wrap{
+        margin-top: size_px2rem(20px);
+          display: flex;
+        align-items: center;
+        .after-price-text-content{
+          font-size: size_px2rem(13px);
+          letter-spacing: size_px2rem(2px);
+          margin-right: size_px2rem(15px);
+          margin-top: size_px2rem(13px);
+          line-height: 1;
+        }
+        .price{
+          font-size: size_px2rem(30px);
+        }
+        .before-price-text-content{
+          line-height: 1.4;
+          letter-spacing: size_px2rem(2px);
+          font-size: size_px2rem(13px);
+          margin-left: size_px2rem(6px);
+          top: size_px2rem(-1px);
+          position: relative;
+        }
+      }
+      .content{
+        margin-top: size_px2rem(27px);
+        color: #222222;
+      }
+      .template-wrap{
+        margin-top: size_px2rem(50px);
+      }
+    }
+  }
+
+  .moto-slider-count-arrow-wrap{
+   display: flex;
+    justify-content: center;
+    padding-left: 10%;
+    padding-right: 20%;
+    margin-top: size_px2rem(60px);
+    .line-decor{
+      flex-grow: 1;
+      position: relative;
+      margin-right: size_px2rem(30px);
+      &:before{
+        position: absolute;
+        display: block;
+        top: 50%;
+        transform: translateY(-50%);
+        content: '';
+        height: size_px2rem(1px);
+        width: 100%;
+        background: #dddddd;
+      }
+    }
+    .entry-slider-cont-arrow{
+      display: inline-flex;
+      align-items: center;
+      .moto-slider-counter{
+        color: #222;
+        display: inline-flex;
+        width: size_px2rem(75px);
+        justify-content: center;
+        font-size: size_px2rem(14px);
+        span{
+          display: inline-block;
+        }
+        .delimeter{
+          margin: 0 size_px2rem(3px);
+        }
+      }
+      .moto-slider-arrow-prev,.moto-slider-arrow-next{
+        display: inline-flex;
+        align-content: center;
+        justify-content: center;
+        background: #222222;
+        width: size_px2rem(25px);
+        height: size_px2rem(25px);
+        cursor: pointer;
+        transition: .3s ease;
+        position: relative;
+        &:after{
+          content: '';
+          width: 0;
+          height: 0;
+          border-style: solid;
+          position: absolute;
+          top: 50%;
+          transform: translate3d(1px, -50%, 0);
+        }
+        &:hover{
+          transition: .3s ease;
+        }
+      }
+      .moto-slider-arrow-prev{
+        &:after{
+          border-width: size_px2rem(4.5px) size_px2rem(6.5px) size_px2rem(4.5px) 0;
+          border-color: transparent #fff transparent transparent;
+        }
+      }
+      .moto-slider-arrow-next{
+        &:after{
+          border-width: size_px2rem(4.5px) 0 size_px2rem(4.5px) size_px2rem(6.5px);
+          border-color: transparent transparent transparent #fff;
+        }
+      }
+    }
+  }
+}
+
+// ICON
+.moto-slider-icon-template{
+  margin-top: size_px2rem(-20px);
+  .icon-box-slider-container{
+    margin-top: size_px2rem(20px);
+    .entry-content{
+      display: flex;
+      .icon-wrap{
+        min-width: size_px2rem(20px);
+        margin-right: size_px2rem(7px);
+        i{
+          font-size: size_px2rem(17px);
+          top: size_px2rem(-1px);
+          color: #222222;
+          position: relative;
+        }
+      }
+      .content-wrap{
+        .icon-title{
+          text-transform: uppercase;
+          color: #222;
+          font-size: size_px2rem(13px);
+          line-height: 1;
+        }
+        .icon-content{
+          font-size: size_px2rem(13px);
+        }
+      }
+    }
+  }
+
+}

@@ -1,0 +1,70 @@
+.page-builder-moto-body-types-wrap{
+  .body-type-item-wrap{
+    background: #fff;
+    border-bottom: size_px2rem(3px) solid;
+    padding: size_px2rem(40px) size_px2rem(30px);
+    transition: .3s ease;
+    .body-type-title{
+      text-transform: uppercase;
+      font-size: size_px2rem(22px);
+      margin-bottom: size_px2rem(15px);
+      transition: .3s ease;
+    }
+    .button-body-type{
+      line-height: 1;
+      text-align: right;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      font-size: size_px2rem(13px);
+      transition: .3s ease;
+      .button-decor{
+        margin-left: size_px2rem(12px);
+        align-items: center;
+        justify-content: center;
+        display: inline-flex;
+        width: 20px;
+        height: 20px;
+        transition: .3s ease;
+        &:after{
+          content: '';
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 4.5px 0 4.5px 6px;
+          border-color: transparent transparent transparent #fff;
+          transition: .6s ease, border-color .3s ease;
+        }
+      }
+    }
+    .icon-body-type-wrap{
+      margin-top: size_px2rem(25px);
+      .icon-wrap{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        i{
+          transition: .3s ease;
+          color: #eeeeee;
+          font-size: size_px2rem(65px);
+        }
+      }
+    }
+    &:hover{
+      .body-type-title{
+        color: #fff;
+      }
+      .button-body-type{
+        color: #fff;
+      }
+      .button-decor{
+        background: #fff;
+        &:after{
+          border-color: transparent transparent transparent #222;
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+}

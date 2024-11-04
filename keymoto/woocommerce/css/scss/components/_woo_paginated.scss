@@ -1,0 +1,32 @@
+.fl-woo-pagination-wrapper{
+  margin-top: 20px;
+
+  .fl-woo-pagination{
+    .page-numbers{
+      color: #1c1f23;
+      transition: .3s ease-in-out;
+      display: inline-block;
+      cursor: pointer;
+      margin-right: 25px;
+      line-height: 1;
+      font-size: 16px;
+      padding: 0 5px;
+      &:last-child{
+        margin-right: 0;
+      }
+      &:hover{
+        transition: .3s ease-in-out;
+      }
+    }
+  }
+}
+
+
+// Load More Animation
+@keyframes spin_load {
+  from {
+    transform: rotate(0deg);
+  } to {
+      transform: rotate(360deg);
+    }
+}

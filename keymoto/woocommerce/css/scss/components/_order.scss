@@ -1,0 +1,36 @@
+.woocommerce-order{
+  .woocommerce-order-overview {
+    li {
+      &:before {
+        display: none;
+      }
+    }
+  }
+   .woocommerce-order-details{
+     tbody{
+       tr{
+         td{
+           ul{
+             li{
+               padding-left: 0;
+               display: flex;
+               &:before{
+                 display: none;
+               }
+               strong{
+                 color: #222222;
+                 flex-grow: 0;
+                 min-width: 20%;
+                 text-align: left;
+               }
+               p{
+                 flex-grow: 1;
+                 text-align: left;
+               }
+             }
+           }
+         }
+       }
+     }
+   }
+}

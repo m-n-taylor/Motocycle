@@ -1,0 +1,22 @@
+.moto-image-slider-wrap{
+  max-width: size_px2rem(720px);
+  margin: 0 auto;
+  .moto-image-slider{
+    margin: 0 size_px2rem(-15px);
+    .moto-timage-slider-item{
+      margin: 0 size_px2rem(15px);
+      .bottom-text-content{
+        margin-top: size_px2rem(25px);
+        .item-moto-slider-title{
+          font-size: size_px2rem(32px);
+          margin-bottom: size_px2rem(8px);
+          color: #fff;
+        }
+        .item-moto-slider-sub-title{
+          margin-bottom: 0;
+          color: #fff;
+        }
+      }
+    }
+  }
+}

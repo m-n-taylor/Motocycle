@@ -1,0 +1,176 @@
+/*==========================================
+||                                           ||
+||          Table of Contents  Woo Styles    ||
+||                                           ||
+||          1. Archive Product style         ||
+||          2. Single Page style             ||
+||          3. Comments Setting Woo          ||
+||          4. Cart Page style               ||
+||          5. Checkout Page style           ||
+||          6. My Account Page style         ||
+||          7. Wishlist page style           ||
+||          8. page Order                    ||
+||          9. Responsive Woo Option         ||
+||          10. Widget                       ||
+||                                           ||
+===========================================*/
+/*-------------------------------------------------------------------
+
+==  Archive Product style
+
+-------------------------------------------------------------------*/
+@import "components/_archive_product_style";
+/*-------------------------------------------------------------------
+
+==  Single Page style
+
+-------------------------------------------------------------------*/
+@import "components/_single_page_style";
+/*-------------------------------------------------------------------
+
+==  Comments Setting Woo
+
+-------------------------------------------------------------------*/
+@import "components/_comments_setting";
+
+
+/*-------------------------------------------------------------------
+
+==  Cart Page style
+
+-------------------------------------------------------------------*/
+@import "components/_cart_page_style";
+
+/*-------------------------------------------------------------------
+
+==  Checkout Page style
+
+-------------------------------------------------------------------*/
+@import "components/_checkout_page_style";
+/*-------------------------------------------------------------------
+
+==  My Account Page style
+
+-------------------------------------------------------------------*/
+@import "components/_my_account_pages";
+/*-------------------------------------------------------------------
+
+==  Wishlist page style
+
+-------------------------------------------------------------------*/
+@import "components/_wishlist_style";
+/*-------------------------------------------------------------------
+
+==  page Order
+
+-------------------------------------------------------------------*/
+@import "components/_order";
+
+/*-------------------------------------------------------------------
+
+==  Responsive Woo Option
+
+-------------------------------------------------------------------*/
+@import '_woo_responsive_setting';
+
+
+
+
+/*-------------------------------------------------------------------
+
+==  Widget
+
+-------------------------------------------------------------------*/
+@import 'components/widget/_widget_woo';
+
+
+
+.single-product .woocommerce-message,.woocommerce-info,.woocommerce-message{
+  z-index: 0;
+  max-width: 1140px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0;
+  border: none;
+  background: #f1f5fa;
+  border-top: 3px solid;
+  margin-bottom: 25px;
+  a.button,a{
+    margin-top: 0;
+    order: 2;
+    background: 0 0;
+    transition: .3s ease;
+    color: #fff;
+    padding: 15px 25px;
+    line-height: 1;
+    font-size: 11px!important;
+    text-transform: uppercase!important;
+  }
+  &:before,&:after{
+    display: none;
+  }
+}
+
+
+.orderby{
+  padding: 7px 15px!important;
+  border-radius: 0!important;
+}
+
+.fl-woo-pagination-wrapper{
+  margin-top: 50px;
+}
+
+.woocommerce-error{
+  &:before{
+    top: 19px;
+    color: red!important;
+    opacity: 0.6;
+  }
+  li{
+    &:before{
+      display: none!important;
+    }
+    &:first-child{
+      margin-top: 0;
+    }
+    strong{
+      font-size: 13px;
+      color: #222222;
+    }
+  }
+}
+
+.select2-container--default .select2-selection--single{
+  border-radius: 0;
+}
+
+.woocommerce #respond input#submit.loading, .woocommerce a.button.loading, .woocommerce button.button.loading, .woocommerce input.button.loading{
+  opacity: 1!important;
+}
+.woocommerce #respond input#submit.loading::after, .woocommerce a.button.loading::after, .woocommerce button.button.loading::after, .woocommerce input.button.loading::after{
+  top: calc(50% - 5px);
+}
+
+
+.woocommerce-error, .woocommerce-info, .woocommerce-message{
+  background: #f1f5fa!important;
+}
+
+
+.shop_table{
+  .variation{
+    p{
+      margin-top: 0;  
+    }
+  }
+}
+
+
+

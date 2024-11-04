@@ -1,0 +1,143 @@
+.sidebar{
+    border-left: size_px2rem(1px) solid #eeeeee;
+    border-right: size_px2rem(1px) solid #eeeeee;
+    border-bottom: size_px2rem(1px) solid #eeeeee;
+    .widget{
+      margin-top: size_px2rem(50px);
+      padding-top: size_px2rem(50px);
+      border-top: size_px2rem(1px) solid #eeeeee;
+      font-size: size_px2rem(14px);
+      padding-left: size_px2rem(30px);
+      padding-right: size_px2rem(30px);
+      &:first-child{
+        margin-top: 0;
+      }
+      .widget-title {
+        position: relative;
+        margin-bottom: size_px2rem(25px);
+        font-size: size_px2rem(21px);
+        color: #222222;
+        text-transform: uppercase;
+        .widget--subtitle{
+          font-size: size_px2rem(11px);
+          margin-top: size_px2rem(7px);
+          text-transform: uppercase;
+          color: #666666;
+          letter-spacing: .2rem;
+        }
+        &:after{
+          position: absolute;
+          left: size_px2rem(-31px);
+          top: 0;
+          content: '';
+          height: 100%;
+          width: size_px2rem(2px);
+          background: #e63619;
+          z-index: 3;
+        }
+      }
+      .widget-inner{
+        padding: size_px2rem(35px) size_px2rem(26px);
+      }
+      a{
+        transition: .3s ease;
+        &:hover{
+          transition: .3s ease;
+        }
+      }
+
+      ul{
+        li{
+          font-size: size_px2rem(14px)!important;
+          margin-top: size_px2rem(10px);
+          a{
+            color: #222222;
+          }
+
+        }
+      }
+      &:last-child{
+        margin-bottom: 0;
+        padding-bottom: size_px2rem(45px);
+      }
+    }
+/*-------------------------------------------------------------------
+
+== Archive Widget
+
+-------------------------------------------------------------------*/
+  @import 'widget/_archive.scss';
+
+/*-------------------------------------------------------------------
+
+== Calendar Widget
+
+-------------------------------------------------------------------*/
+  @import 'widget/_calendar.scss';
+
+/*-------------------------------------------------------------------
+
+== Category Widget
+
+-------------------------------------------------------------------*/
+  @import 'widget/_category.scss';
+
+/*-------------------------------------------------------------------
+
+== Navigator Widget
+
+-------------------------------------------------------------------*/
+  @import 'widget/_nav_menu.scss';
+
+/*-------------------------------------------------------------------
+
+== Pages Widget
+
+-------------------------------------------------------------------*/
+  @import 'widget/_pages.scss';
+
+/*-------------------------------------------------------------------
+
+== RSS Widget
+
+-------------------------------------------------------------------*/
+  @import 'widget/_rss.scss';
+
+/*-------------------------------------------------------------------
+
+== Search Widget
+
+-------------------------------------------------------------------*/
+  @import 'widget/_search.scss';
+
+/*-------------------------------------------------------------------
+
+== Tags Widget
+
+-------------------------------------------------------------------*/
+  @import 'widget/_tags.scss';
+
+/*-------------------------------------------------------------------
+
+== Recent Comments Widget
+
+-------------------------------------------------------------------*/
+  @import 'widget/_recent_comments.scss';
+
+/*-------------------------------------------------------------------
+
+== Popular Post Widget
+
+-------------------------------------------------------------------*/
+  @import 'widget/_popular_post.scss';
+
+/*-------------------------------------------------------------------
+
+== Other Style
+
+-------------------------------------------------------------------*/
+  @import 'widget/_other_style.scss';
+
+
+}
+

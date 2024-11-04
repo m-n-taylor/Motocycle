@@ -1,0 +1,22 @@
+.widget_text{
+  strong{
+    margin-bottom: 20px;
+    color: #222222;
+  }
+  p{
+    margin-bottom: 20px;
+  }
+  .wp-caption{
+    margin-bottom: 15px;
+    p{
+      margin-top: 10px;
+      margin-bottom: 0;
+    }
+    .wp-caption-text{
+      text-align: center;
+    }
+  }
+  select{
+    margin-bottom: 0;
+  }
+}

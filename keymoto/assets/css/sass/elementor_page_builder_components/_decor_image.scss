@@ -1,0 +1,12 @@
+.page-builder-decor-image-wrap{
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  .decor-image-wrap{
+    width: 50%;
+    .entry-content{
+      border-left: size_px2rem(20px) solid #fff;
+      border-top: size_px2rem(20px) solid #fff;
+    }
+  }
+}

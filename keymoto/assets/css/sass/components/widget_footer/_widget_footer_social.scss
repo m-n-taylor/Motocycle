@@ -1,0 +1,26 @@
+.widget_templines_theme_helper_social_profiles{
+  .footer-social-profiles-ul{
+    text-align: center;
+    .footer-social-profiles-li{
+      display: inline-block;
+      .footer-social-profiles-link{
+        transition: .3s ease;
+        color: #ffffff;
+        padding: 0 size_px2rem(11px);
+        &:hover{
+          transition: .3s ease;
+        }
+      }
+      &:first-child{
+        .footer-social-profiles-link{
+          padding-left: 0;
+        }
+      }
+      &:last-child{
+        .footer-social-profiles-link{
+          padding-right: 0;
+        }
+      }
+    }
+  }
+}

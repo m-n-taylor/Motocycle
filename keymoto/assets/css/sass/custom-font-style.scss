@@ -1,0 +1,89 @@
+// Body
+body{
+ color:#777777;
+ text-align: left;
+ text-transform: none;
+ font-family: 'Oxygen';
+ font-weight: 400;
+}
+
+
+// Header-style
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6,.fl-text-title-style{
+ color:#222222;
+ font-weight: 700;
+ font-family: 'Oswald';
+}
+
+
+// Regular One
+.fl-font-style-regular,.sidebar:not(.cars-sidebar) .widget ul li,blockquote{
+ font-weight: 400;
+ font-family: 'Oswald';
+}
+
+
+// Regular Two
+
+.fl-font-style-regular-two{
+ font-weight: 400;
+ font-family: 'Oxygen';
+}
+
+// Bolt One
+.fl-font-style-bolt,[data-decor-text="bottom-center"]:before,[data-decor-text="left-top"]:before{
+ font-weight: 700;
+ font-family: 'Oswald';
+}
+
+// Bolt Two
+.fl-font-style-bolt-two{
+ font-weight: 700;
+ font-family: 'Oxygen';
+}
+
+
+// Medium
+.fl-font-style-medium,.fl-default-button,.sidebar .widget .widget-title,.sidebar .widget_tag_cloud .tagcloud a,.header-sidebar-wrap .entry-content .header-sidebar-container .entry-sidebar .widget.widget_nav_menu li a{
+ font-family: 'Oswald';
+ font-weight: 500;
+}
+
+//Lighten
+.fl-font-style-lighter-than{
+ font-weight: 300;
+ font-family: 'Oswald';
+}
+
+// Semi Bolt
+.fl-font-style-semi-bolt,.car-details .content-wrap > h2{
+ font-family: 'Oswald';
+ font-weight: 600;
+}
+
+//Nav Typography
+.fl--header .nav-menu li a{
+ font-size: 13px;
+ font-weight: 500;
+ font-family: 'Oswald';
+}
+.fl-mega-menu>ul>li .sub-nav>ul.sub-menu-wide>li>a{
+ font-weight: 700;
+ font-size: 10px;
+ font-family: 'Oswald';
+}
+.fl--header .nav-menu li .sub-menu li a,.fl--header .nav-menu li .sub-menu li .sub-sub-menu{
+ font-weight: 400;
+ font-size: 14px;
+ font-family: 'Oswald';
+}
+.fl--mobile-menu li a{
+ font-family: 'Montserrat';
+ font-weight: 500;
+ font-size: 11px;
+}
+.fl--mobile-menu li .sub-menu li a{
+ font-family: 'Montserrat';
+ font-weight: 500;
+ font-size: 11px;
+}

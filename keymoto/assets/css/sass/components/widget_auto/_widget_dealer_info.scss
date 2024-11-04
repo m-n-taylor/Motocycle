@@ -1,0 +1,96 @@
+.dealer-info{
+  border: size_px2rem(1px) solid #eeeeee;
+  margin-top: size_px2rem(27px);
+  .promo-images-wrap{
+    text-align: center;
+    padding: size_px2rem(20px) size_px2rem(30px);
+  }
+  .dealer-top-info{
+    background: #e9fefa;
+    padding: size_px2rem(25px) size_px2rem(20px);
+    display: flex;
+    flex-wrap: wrap;
+    .left{
+      margin-right: size_px2rem(15px);
+      img{
+        max-width: 80px;
+      }
+    }
+    .right{
+      .dealer-name{
+        text-transform: uppercase;
+        color: #222;
+        font-size: size_px2rem(18px);
+        .author-last-name{
+          margin-left: size_px2rem(5px);
+        }
+      }
+      .bottom{
+        font-size: size_px2rem(13px);
+        line-height: 1;
+        margin-top: size_px2rem(5px);
+      }
+      .social-info{
+        margin-top: size_px2rem(7px);
+        ul{
+          li{
+            padding: 0 size_px2rem(6px);
+            display: inline-flex;
+            &:first-child{
+              padding-left: 0;
+            }
+            i{
+              transition: .3s ease;
+              &:hover{
+                opacity: .7;
+                transition: .3s ease;
+              }
+              &.fa-twitter{
+                color: #54abec;
+              }
+              &.fa-facebook{
+                color: #2d549d;
+              }
+              &.fa-linkedin{
+                color: #3e578a;
+              }
+              &.fa-instagram{
+                color: #222;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .dealer-bottom-info{
+    .email-info,.phone-info{
+      padding: size_px2rem(20px) size_px2rem(30px);
+      display: flex;
+      flex-wrap: wrap;
+      .left-content{
+        margin-right: size_px2rem(15px);
+        margin-top: size_px2rem(10px);
+        i{
+          font-size: size_px2rem(30px);
+        }
+      }
+      .right-content{
+        .title{
+          font-size: size_px2rem(14px);
+        }
+        a{
+          color: #222;
+          transition: .3s ease;
+          &:hover{
+            opacity: .7;
+            transition: .3s ease;
+          }
+        }
+      }
+    }
+    .phone-info{
+      border-top: size_px2rem(1px) solid #eeeeee;
+    }
+  }
+}
