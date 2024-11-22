@@ -1,5 +1,5 @@
 # Keymoto Motorcycle Website
-This repository contains the code and configuration files for a **motorcycle website** built using **WordPress** and **Shopify**. The website uses the **Keymoto** theme to deliver a modern, responsive design tailored for motorcycle businesses, including e-commerce functionalities and customizations.
+This contains the code and configuration files for a **motorcycle website** built using **WordPress** and **Shopify**. The website uses the **Keymoto** theme to deliver a modern, responsive design tailored for motorcycle businesses, including e-commerce functionalities and customizations.
 ![Uploading Screenshot_2.png…]()
 ## Features
 
