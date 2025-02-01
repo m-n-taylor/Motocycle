@@ -73,3 +73,5 @@ webservers should be tuned. Here is list of mime types for our file extensions:
 - `application/x-font-woff` - woff
 - `application/x-font-ttf` - ttf
 - `image/svg+xml` - svg
+
+<!-- update: 2025-07-24T09:07:08.648339 -->
