@@ -36,6 +36,6 @@ This contains the code and configuration files for a **motorcycle website** buil
 ### Steps
 -Clone the repository:
    ```bash
-   git clone https://github.com/your-username/keymoto-motorcycle-website.git](https://github.com/GeniusSecret1117/motorcycle/
+   git clone https://github.com/your-username/keymoto-motorcycle-website.git
 
 <!-- update: 2025-07-24T09:08:16.869275 -->
